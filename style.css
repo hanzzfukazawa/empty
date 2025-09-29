@@ -1,0 +1,72 @@
+/* Font & Base */
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #e0f7ff);
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  color: #ff69b4;
+  margin: 10px;
+}
+
+p { color: #444; font-size: 1.1rem; }
+
+button {
+  background: #ffb6c1;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover { background: #ff89a0; }
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden { display: none; }
+
+/* Responsive Button Runaway */
+#runBtn {
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Mini Game */
+#heartContainer {
+  position: relative;
+  width: 90%;
+  height: 300px;
+  background: #fff0f6;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+  cursor: pointer;
+}
+
+/* Mobile tweaks */
+@media (max-width: 600px) {
+  p { font-size: 1rem; }
+  button { font-size: 1rem; padding: 10px 16px; }
+  #heartContainer { height: 250px; }
+}
